@@ -8,7 +8,7 @@ import (
 	"database/sql/driver"
 	"unsafe"
 
-	"github.com/ibmdb/go_ibm_db/api"
+	"github.com/barisvelioglu/go_ibm_db/api"
 )
 
 type Conn struct {

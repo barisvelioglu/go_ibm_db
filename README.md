@@ -4,7 +4,7 @@ Interface for GoLang to DB2 for z/OS, DB2 for LUW, DB2 for i.
 
 ## API Documentation
 
-> For complete list of go_ibm_db APIs and examples please check [APIDocumentation.md](https://github.com/ibmdb/go_ibm_db/blob/master/API_DOCUMENTATION.md)
+> For complete list of go_ibm_db APIs and examples please check [APIDocumentation.md](https://github.com/barisvelioglu/go_ibm_db/blob/master/API_DOCUMENTATION.md)
 
 ## Prerequisite
 
@@ -21,7 +21,7 @@ yum install go git tar libpam
 
 ## How to Install in Windows
 ```
-go get -d github.com/ibmdb/go_ibm_db
+go get -d github.com/barisvelioglu/go_ibm_db
 
 If you already have a cli driver available in your system, add the path of the same to your Path windows environment variable
 Example: Path = C:\Program Files\IBM\IBM DATA SERVER DRIVER\bin
@@ -41,7 +41,7 @@ Add the path of the clidriver downloaded to your Path windows environment variab
 
 ## How to Install in Linux/Mac
 ```
-go get -d github.com/ibmdb/go_ibm_db
+go get -d github.com/barisvelioglu/go_ibm_db
 
 If you already have a cli driver available in your system, set the below environment variables with the clidriver path
 
@@ -54,7 +54,7 @@ Mac:
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Applications/dsdriver/lib
 
 If you do not have a clidriver available in your system
-go to installer folder where go_ibm_db is downloaded in your system (Example: /home/uname/go/src/github.com/ibmdb/go_ibm_db/installer or /home/uname/go/pkg/mod/github.com/ibmdb/go_ibm_db/installer) and run setup.go file (go run setup.go)
+go to installer folder where go_ibm_db is downloaded in your system (Example: /home/uname/go/src/github.com/barisvelioglu/go_ibm_db/installer or /home/uname/go/pkg/mod/github.com/barisvelioglu/go_ibm_db/installer) and run setup.go file (go run setup.go)
 where uname is the username
 
 Above command will download clidriver.
@@ -92,7 +92,7 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/ibmdb/go_ibm_db"
+	_ "github.com/barisvelioglu/go_ibm_db"
 )
 
 func main() {
@@ -116,7 +116,7 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/ibmdb/go_ibm_db"
+	_ "github.com/barisvelioglu/go_ibm_db"
 )
 
 func Create_Con(con string) *sql.DB {
@@ -221,7 +221,7 @@ package main
 import (
 	_ "database/sql"
 	"fmt"
-	a "github.com/ibmdb/go_ibm_db"
+	a "github.com/barisvelioglu/go_ibm_db"
 )
 
 func main() {
